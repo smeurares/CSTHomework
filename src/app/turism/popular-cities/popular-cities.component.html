@@ -1,0 +1,17 @@
+<div class="popular-cities-container">
+  <div class="most-popular">
+    <p class="most-popular-text">Most Popular</p>
+  </div>
+  <div class="grid-cities">
+    <div class="grid-card" *ngFor="let city of citiesList">
+      <div class="card-image">
+        <img [src]="city.imageUrl" alt="city">
+      </div>
+      <div class="card-content">
+        <p class="card-title">{{city.title}} </p>
+        <p class="card-desc">{{city.description}} </p>
+        <button class="card-button" (click)="setCityHeader(city.title)">Visit Now</button>
+      </div>
+    </div>
+  </div>
+</div>

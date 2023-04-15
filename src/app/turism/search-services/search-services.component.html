@@ -1,0 +1,19 @@
+<div class="search-container">
+  <p class="search-book">Search and book all our destinations</p>
+  <input type="text" placeholder="Select your city" [(ngModel)]="searchText">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let city of citiesList| appFilter: searchText">
+      {{city.title}}
+    </li>
+  </ul>
+  <div class="our-services">
+    <p>OUR SERVICES</p>
+  </div>
+  <div class="grid-services">
+    <div class="grid-item" *ngFor="let service of searchServices">
+      <p class="grid-item-header">{{service.category}}</p>
+      <p class="grid-item-title">{{service.title}} </p>
+      <p class="grid-item-description">{{service.description}}</p>
+    </div>
+  </div>
+</div>

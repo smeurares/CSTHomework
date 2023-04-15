@@ -1,0 +1,82 @@
+.search-container {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px;
+  margin-top: 150px;
+}
+
+.search-book {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.search-container input {
+  border-radius: 10px;
+  border: 1px solid rgb(114, 103, 103);
+  width: 30vw;
+  padding: 5px 15px;
+}
+
+.our-services {
+  padding: 15px 30px;
+  border-bottom: 2px solid green;
+  font-size: 20px;
+  color: green;
+  margin: 10px auto;
+}
+
+.grid-services {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px 30px;
+  justify-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.grid-item-header {
+  font-size: 16px;
+  color: green;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.grid-item-title {
+  font-size: 12px;
+  color: black;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 30vw;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  background-color: rgb(11, 209, 81);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+}

@@ -1,0 +1,9 @@
+<div class="adventure-header">
+  <p class="discover-paragraph">Discover the colorful world</p>
+  <div class="discover-header"><p>{{newAdventure.length > 0 ? newAdventure : "New Adventure"}}</p></div>
+  <p class="lorem-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. , ipsum, minima cupiditate aliquid deserunt dolore sequi asperiores velit quo accusamus qui molestias sit fugiat nisi dolorem.</p>
+  <a class="discover-button" href="#app-search-services" >DISCOVER NOW</a>
+</div>
+<app-search-services id="app-search-services"></app-search-services>
+<app-popular-cities (cityHeader)="setNewAdventure($event)"></app-popular-cities>
+
